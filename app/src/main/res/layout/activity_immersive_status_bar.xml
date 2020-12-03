@@ -6,7 +6,7 @@
     android:background="@color/colorPrimary"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
-
+    <!--android:fitsSystemWindows="true"让显示内容不显示在状态栏和导航栏里-->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tb"
         android:layout_width="match_parent"
