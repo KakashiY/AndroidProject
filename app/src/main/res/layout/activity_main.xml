@@ -7,15 +7,21 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="toImmersiveStatusBar"
+        android:onClick="gotoImmersiveStatusBar"
         android:text="沉浸式状态栏" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="获取状态栏和导航栏大小" />
 
 
 </LinearLayout>

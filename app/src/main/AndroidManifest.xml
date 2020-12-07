@@ -17,8 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ImmersiveStatusBarActivity"
-            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".ImmersiveStatusBarActivity" />
     </application>
 
 </manifest>
