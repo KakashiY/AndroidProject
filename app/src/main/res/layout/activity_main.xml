@@ -22,6 +22,10 @@
         android:layout_height="wrap_content"
         android:onClick="getSize"
         android:text="获取状态栏和导航栏大小" />
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToRecycleView"
+        android:text="RecycleView" />
 
 </LinearLayout>

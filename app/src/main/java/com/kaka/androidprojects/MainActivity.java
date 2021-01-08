@@ -31,4 +31,9 @@ public class MainActivity extends AppCompatActivity {
         int nbHeightL = DisplayUtils.getInternalDimensionPixelSize(getResources(), DisplayUtils.NAV_BAR_HEIGHT_LANDSCAPE_RES_NAME);
         Toast.makeText(this, "状态栏宽-高：" + sbWidth + "-" + sbHeight + ",导航栏宽-高：" + nbWidth + "-" + nbHeight + ",水平导航栏高：" + nbHeightL, Toast.LENGTH_LONG).show();
     }
+
+    public void goToRecycleView(View view) {
+        Intent intent = new Intent(this, RecylerViewActivity.class);
+        startActivity(intent);
+    }
 }
