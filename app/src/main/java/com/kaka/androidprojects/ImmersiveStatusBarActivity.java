@@ -21,23 +21,23 @@ public class ImmersiveStatusBarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_immersive_status_bar);
         // 使用代码代替主题
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//            int flagTranslucentStatus = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
-//            int flagTranslucentNavigation = WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION;
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                Window window = getWindow();
-//                WindowManager.LayoutParams attributes = window.getAttributes();
-//                attributes.flags |= flagTranslucentNavigation;
-//                window.setAttributes(attributes);
-//                getWindow().setStatusBarColor(Color.TRANSPARENT);
-//            } else {
-//                Window window = getWindow();
-//                WindowManager.LayoutParams attributes = window.getAttributes();
-//                attributes.flags |= flagTranslucentStatus | flagTranslucentNavigation;
-//                window.setAttributes(attributes);
-//            }
-//        }
-        fullScreen(this);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            int flagTranslucentStatus = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+            int flagTranslucentNavigation = WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                Window window = getWindow();
+                WindowManager.LayoutParams attributes = window.getAttributes();
+                attributes.flags |= flagTranslucentNavigation;
+                window.setAttributes(attributes);
+                getWindow().setStatusBarColor(Color.TRANSPARENT);
+            } else {
+                Window window = getWindow();
+                WindowManager.LayoutParams attributes = window.getAttributes();
+                attributes.flags |= flagTranslucentStatus | flagTranslucentNavigation;
+                window.setAttributes(attributes);
+            }
+        }
+//        fullScreen(this);
     }
 
     @Override
