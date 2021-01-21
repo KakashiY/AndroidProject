@@ -1,0 +1,111 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:layout_scrollFlags="scroll|enterAlways"-->
+    <!--            app:navigationIcon="@mipmap/ic_back_black" />-->
+
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@android:color/holo_red_dark"
+            android:layout_height="20dp"/>
+        <!--        &lt;!&ndash;自定义标题&ndash;&gt;-->
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:id="@+id/collapsing_toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--            app:collapsedTitleTextAppearance="@style/collapsedTitleTextAppearance"-->
+<!--            app:contentScrim="?attr/colorPrimary"-->
+<!--            app:expandedTitleMarginBottom="60dp"-->
+<!--            app:expandedTitleMarginEnd="5dp"-->
+<!--            app:expandedTitleMarginStart="92dp"-->
+<!--            app:expandedTitleTextAppearance="@style/expandedTitleTextAppearance"-->
+<!--            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"-->
+<!--            app:title="标题  到底">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/fruit_image_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:fitsSystemWindows="true"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@mipmap/bg_check_in"-->
+<!--                app:layout_collapseMode="parallax"></ImageView>-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                app:layout_collapseMode="pin"-->
+<!--                app:navigationIcon="@mipmap/ic_back_black">-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@android:color/holo_red_dark" />&ndash;&gt;-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            android:background="#333333"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/idToScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="#333300"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="#003300"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/float_ok"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_anchor="@id/collapsing_toolbar"-->
+    <!--        app:layout_anchorGravity="bottom|end"-->
+    <!--        android:src="@mipmap/ic_launcher_round"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

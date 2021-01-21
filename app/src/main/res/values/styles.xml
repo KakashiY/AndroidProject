@@ -15,4 +15,14 @@
         <!--注意：导航栏设置透明是为了让activity内容延伸至状态栏，导航栏实际为半透明加暗效果,activity内容也会延伸到导航栏-->
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+
+    <style name="collapsedTitleTextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="expandedTitleTextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFF00</item>
+    </style>
 </resources>

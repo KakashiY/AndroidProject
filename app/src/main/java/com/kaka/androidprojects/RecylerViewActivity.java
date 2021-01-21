@@ -12,6 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+/**
+ * RecylerView测试
+ */
 public class RecylerViewActivity extends AppCompatActivity {
 
     public static final String TAG = "RecylerViewActivity";

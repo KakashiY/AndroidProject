@@ -22,10 +22,21 @@
         android:layout_height="wrap_content"
         android:onClick="getSize"
         android:text="获取状态栏和导航栏大小" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getScreenSize"
+        android:text="获取屏幕宽高" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="goToRecycleView"
         android:text="RecycleView" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToCollapsingToolbar"
+        android:text="可折叠标题栏" />
 
 </LinearLayout>

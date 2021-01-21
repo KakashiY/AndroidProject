@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getSize(View view) {
-        StringBuilder temp = new StringBuilder();
         int sbHeight = DisplayUtils.getInternalDimensionPixelSize(getResources(), DisplayUtils.STATUS_BAR_HEIGHT_RES_NAME);
         int sbWidth = DisplayUtils.getInternalDimensionPixelSize(getResources(), DisplayUtils.STATUS_BAR_WIDTH_RES_NAME);
         int nbHeight = DisplayUtils.getInternalDimensionPixelSize(getResources(), DisplayUtils.NAV_BAR_HEIGHT_RES_NAME);
@@ -34,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToRecycleView(View view) {
         Intent intent = new Intent(this, RecylerViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToCollapsingToolbar(View view) {
+        Intent intent = new Intent(this, CollapsingToolbarActivity.class);
+        startActivity(intent);
+    }
+
+    public void getScreenSize(View view) {
+        Intent intent = new Intent(this, ScreenSizeActivity.class);
         startActivity(intent);
     }
 }
